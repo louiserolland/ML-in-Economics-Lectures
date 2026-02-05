@@ -1,0 +1,68 @@
+[project]
+name = "d200-machine-learning-in-economics"
+version = "0.1.0"
+description = "D200 Machine Learning in Economics Course"
+requires-python = ">=3.9,<3.13"
+dependencies = [
+    # Jupyter environment
+    "jupyter",
+    "jupyterlab",
+    "notebook",
+    "ipywidgets",
+    "papermill",
+
+    # Data manipulation
+    "numpy<2",  # TensorFlow 2.16 requires numpy<2
+    "pandas",
+    "scipy",
+
+    # Visualization
+    "matplotlib",
+    "seaborn",
+
+    # Traditional ML
+    "scikit-learn",
+
+    # Econometrics
+    "statsmodels",
+
+    # Deep Learning - TensorFlow
+    "tensorflow>=2.16,<2.17",
+    "tensorflow-probability",
+    "tf_keras",
+
+    # Deep Learning - PyTorch
+    "torch",
+    "torchvision",
+    "torchaudio",
+
+    # Deep Learning - JAX (use compatible version with TF)
+    "jax>=0.4,<0.5",
+    "jaxlib>=0.4,<0.5",
+    "optax",
+    "chex",
+    "dm-tree",
+
+    # Hugging Face ecosystem
+    "transformers",
+    "datasets",
+    "accelerate",
+    "peft",
+    "trl",
+    "sentence-transformers",
+    "tokenizers",
+    "safetensors",
+    "evaluate",
+
+    # RAG / Embeddings
+    "chromadb",
+
+    # Optimization
+    "gurobipy",
+    "ortools",
+
+    # Discrete choice
+    "choice-learn",
+]
+
+# No build-system - this is a course project, not an installable package
